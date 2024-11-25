@@ -2,6 +2,8 @@
   "date": "2024年12月31日 星期二 晚上18:30",
   "location": "君品酒店 五樓 亮廳",
   "gretting": "我們的愛情在彼此凝視中成長\n如今希望它能成為我們共同展望未來的力量\n並成長為更偉大的愛。\n我們誠摯地希望能得到您的祝福\n讓我們在愛的名義下前行",
+  "ceremoney_info": "下午 16:00 戶外證婚儀式",
+  "banquet_info": "晚間 18:30 晚宴敬請入席",
   "groom": {
     "name": "東方譯慷",
     "account_number": "28881017801284",
@@ -19,7 +21,7 @@
   },
   "bride": {
     "name": "蘇宣",
-    "account_number": "台新銀行(812) 28881017801284",
+    "account_number": "28881017801284",
     "parents": {
       "mother": {
         "name": "方麗娟",
@@ -33,7 +35,7 @@
   },
   "kakaotalk": {
     "api_token": "",
-    "wedding_invitation_url": "",
+    "wedding_invitation_url": "https://my-wedding-invitation-five.vercel.app/",
     "share_image": ""
   }
 }
