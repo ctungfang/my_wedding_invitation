@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
 import { Noto_Sans_KR } from "next/font/google";
 import dynamic from "next/dynamic";
 import { styled } from "@stitches/react";
@@ -53,7 +52,7 @@ export default function Home() {
         />
         <meta
           property="og:url"
-          content="https://kyuhyuk.kr/wedding-invitation"
+          content="https://my-wedding-invitation-five.vercel.app/"
         />
         <meta name="theme-color" content="#BCAAA4" />
         <title>Susan❤Charles 邀請您參加婚禮</title>
@@ -62,7 +61,7 @@ export default function Home() {
         <Title data={JsonData} />
         <Gretting data={JsonData} />
         <Gallery />
-        <Location />
+        <Location data={JsonData} />
         <CongratulatoryMoney data={JsonData} />
         <Share data={JsonData} />
         <Footer>Copyright © 2021 KyuHyuk Lee</Footer>
