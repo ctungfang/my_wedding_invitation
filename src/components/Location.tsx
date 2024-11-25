@@ -10,7 +10,7 @@ const Wrapper = styled("div", {
 });
 
 const Title = styled("p", {
-  fontSize: "3vh", // Increased font size for the main title
+  fontSize: "2vh", // Increased font size for the main title
   fontWeight: "bold",
   opacity: 0.85,
   marginBottom: 0,
