@@ -1,0 +1,39 @@
+{
+  "date": "2024年12月31日 星期二 晚上18:30",
+  "location": "君品酒店 五樓 亮廳",
+  "gretting": "我們的愛情在彼此凝視中成長\n如今希望它能成為我們共同展望未來的力量\n並成長為更偉大的愛。\n我們誠摯地希望能得到您的祝福\n讓我們在愛的名義下前行",
+  "groom": {
+    "name": "東方譯慷",
+    "account_number": "28881017801284",
+    "account_number_usd":"@CharlesTungFang",
+    "parents": {
+      "mother": {
+        "name": "鄧碧珍",
+        "account_number": ""
+      },
+      "father": {
+        "name": "東方介德",
+        "account_number": ""
+      }
+    }
+  },
+  "bride": {
+    "name": "蘇宣",
+    "account_number": "台新銀行(812) 28881017801284",
+    "parents": {
+      "mother": {
+        "name": "方麗娟",
+        "account_number": ""
+      },
+      "father": {
+        "name": "蘇正文",
+        "account_number": ""
+      }
+    }
+  },
+  "kakaotalk": {
+    "api_token": "",
+    "wedding_invitation_url": "",
+    "share_image": ""
+  }
+}
