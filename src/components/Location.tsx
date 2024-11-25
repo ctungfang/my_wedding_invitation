@@ -10,7 +10,7 @@ const Wrapper = styled("div", {
 });
 
 const Title = styled("p", {
-  fontSize: "3vh", // Increased font size for better visibility
+  fontSize: "3vh", // Increased font size for the main title
   fontWeight: "bold",
   opacity: 0.85,
   marginBottom: 0,
@@ -38,6 +38,13 @@ const AddressWrapper = styled("div", {
   gap: "12px", // Space between the address and button
   maxWidth: "300px", // Prevent text from stretching too wide
   textAlign: "center", // Ensure address text is centered
+});
+
+const LocationTitle = styled("p", {
+  fontSize: "1.8vh", // Increased font size for location title
+  fontWeight: "bold",
+  opacity: 0.85,
+  marginBottom: "4px",
 });
 
 const Address = styled("p", {
@@ -77,9 +84,10 @@ export default function Location({
 
         {/* Address Section */}
         <AddressWrapper>
+          {/* Location Title with increased font size */}
+          <LocationTitle>{data?.location_title}</LocationTitle>
+
           <Address>
-            <strong>{data?.location_title}</strong>
-            <br />
             <strong>{data?.location}</strong>
             <br />
             {data?.wedding_address}
