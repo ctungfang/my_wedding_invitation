@@ -6,6 +6,7 @@ import JsonData from "@/data.json";
 
 const Title = dynamic(() => import("@/components/Title"), { ssr: false });
 const Gretting = dynamic(() => import("@/components/Gretting"), { ssr: false });
+const Wedding = dynamic(() => import("@/components/Wedding"), { ssr: false });
 const Gallery = dynamic(() => import("@/components/Gallery"), { ssr: false });
 const Location = dynamic(() => import("@/components/Location"), { ssr: false });
 const CongratulatoryMoney = dynamic(() => import("@/components/CongratulatoryMoney"), { ssr: false });
@@ -60,11 +61,12 @@ export default function Home() {
       <main className={`${notoSansKR.className}`}>
         <Title data={JsonData} />
         <Gretting data={JsonData} />
+        <Wedding data={JsonData} />
         <Gallery />
         <Location data={JsonData} />
         <CongratulatoryMoney data={JsonData} />
         <Share data={JsonData} />
-        <Footer>Copyright © 2021 KyuHyuk Lee</Footer>
+        <Footer>Copyright © 2024 Charles Tung Fang</Footer>
       </main>
     </>
   );
