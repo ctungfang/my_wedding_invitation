@@ -1,7 +1,18 @@
 type Data = {
   date: string;
+  date_only?: string;
+  location_title?: string;
+  location_eng?: string;
   location: string;
+  wedding_address?: string;
   gretting: string;
+  invitation_title?: string;
+  ceremoney_info?: string;
+  banquet_entry_info?: string;
+  banquet_info?: string;
+  afterparty_title?: string;
+  afterparty_location?: string;
+  afterparty_address?: string;
   groom: {
     name: string;
     account_number: string;

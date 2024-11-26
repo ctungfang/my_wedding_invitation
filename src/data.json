@@ -1,11 +1,16 @@
 {
   "date": "2024年12月31日 星期二 晚上19:00",
+  "date_only": "2024年12月31日(星期二)",
   "location_title": "| 席設 |",
+  "location_eng":"Palais de Chine Hotel",
   "location": "君品酒店 五樓 亮廳",
   "wedding_address": "台北市大同區承德路一段3號",
-  "gretting": "我們的愛情在彼此凝視中成長\n如今希望它能成為我們共同展望未來的力量\n並成長為更偉大的愛。\n我們誠摯地希望能得到您的祝福\n讓我們在愛的名義下前行",
+  "gretting": "我們的愛情在彼此支持中綻放\n化作攜手展望未來的力量\n誠邀您見證 為我們送上祝福\n讓愛引領我們前行",
+  "invitation_title":"敬邀婚宴",
   "ceremoney_info": "下午 16:00 戶外證婚儀式",
-  "banquet_info": "晚間 18:30 晚宴敬請入席",
+  "banquet_entry_info": "晚間 18:30 恭候嘉賓入席",
+  "banquet_info": "晚間 19:00 喜宴準時開席",
+  "afterparty_title": "After Party",
   "afterparty_location": "Bar Crouch & Hide 臥藏",
   "afterparty_address": "台北市大安區光復南路452號",
   "groom": {

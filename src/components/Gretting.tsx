@@ -32,6 +32,19 @@ const GroomBride = styled("p", {
   textAlign: "center",
 });
 
+const InvitationDetails = styled("div", {
+  fontSize: "1.5vh",
+  lineHeight: 1.75,
+  opacity: 0.85,
+  marginTop: 16,
+  textAlign: "center",
+});
+
+const Highlight = styled("strong", {
+  fontSize: "1.75vh",
+  color: "rgb(150, 45, 46)", // Optional: Highlight color for titles like After Party
+});
+
 type GrettingProps = {
   data?: Data;
 };
@@ -43,14 +56,12 @@ export default function Gretting({ data }: GrettingProps) {
         <Title>我們要結婚了</Title>
       </Divider>
       <Content>
-        {data?.gretting?.split("\n")?.map((value, index) => {
-          return (
-            <div key={index}>
-              {value}
-              <br />
-            </div>
-          );
-        })}
+        {data?.gretting?.split("\n")?.map((value, index) => (
+          <div key={index}>
+            {value}
+            <br />
+          </div>
+        ))}
       </Content>
       <GroomBride>
         Susan & Charles 
@@ -58,14 +69,37 @@ export default function Gretting({ data }: GrettingProps) {
         蘇宣 & 東方譯慷
         <br />
         新娘家長 {" "}
-        {" "} {data?.bride?.parents?.father?.name} ·{" "}
+        {data?.bride?.parents?.father?.name} ·{" "}
         {data?.bride?.parents?.mother?.name}
         <br />
         新郎家長 {" "}
-        {" "} {data?.groom?.parents?.father?.name} ·{" "}
+        {data?.groom?.parents?.father?.name} ·{" "}
         {data?.groom?.parents?.mother?.name}
       </GroomBride>
 
+      {/* Invitation Details */}
+      <InvitationDetails>
+        <strong>{data?.invitation_title}</strong>
+        <br />
+        {data?.ceremoney_info}
+        <br />
+        {data?.banquet_entry_info}
+        <br />
+        {data?.banquet_info}
+        <br />
+        <Highlight>{data?.location_eng}</Highlight>
+        <br />
+        {data?.location}
+        <br />
+        {data?.wedding_address}
+        <br />
+        <br />
+        <Highlight>{data?.afterparty_title}</Highlight>
+        <br />
+        {data?.afterparty_location}
+        <br />
+        {data?.afterparty_address}
+      </InvitationDetails>
     </Wrapper>
   );
 }
