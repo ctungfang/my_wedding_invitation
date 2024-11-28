@@ -60,7 +60,7 @@ export default function Title({ data }: TitleProps) {
   return (
     <Layout>
       <VideoBackground autoPlay loop muted playsInline={true}>
-        <source src="./assets/sc_background_video_2.mp4" type="video/mp4" />
+        <source src="./assets/sc_background_video.mp4" type="video/mp4" />
       </VideoBackground>
       <TitleWrapper>
         <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
