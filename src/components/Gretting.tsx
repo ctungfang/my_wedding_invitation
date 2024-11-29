@@ -5,7 +5,7 @@ const Wrapper = styled("div", {
   background: "#efebe9",
   backgroundImage: "url(./assets/GroovePaper.png)",
   width: "100%",
-  paddingBottom: 5,
+  paddingBottom: 0,
   textAlign: "center",
 });
 

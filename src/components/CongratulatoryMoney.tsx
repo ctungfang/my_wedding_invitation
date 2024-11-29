@@ -7,7 +7,7 @@ import CopyToClipboard from "react-copy-to-clipboard";
 const Wrapper = styled("div", {
   background: "#efebe9",
   backgroundImage: "url(./assets/GroovePaper.png)",
-  paddingBottom: 8,
+  paddingBottom: 18,
   width: "100%",
   textAlign: "center",
 });
@@ -23,7 +23,7 @@ const Content = styled("p", {
   fontSize: "1.5vh",
   lineHeight: 1.75,
   opacity: 0.75,
-  marginBottom: 12,
+  marginBottom: 24,
 });
 
 const SubContent = styled("p", {
@@ -54,22 +54,6 @@ const QRCode = styled("img", {
   height: 100,
 });
 
-const RedEnvelopeButton = styled("button", {
-  width: 64,
-  height: 64,
-  borderRadius: "50%",
-  background: "linear-gradient(135deg, #D83A34, #FF6F61)",
-  border: "2px solid gold",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-  cursor: "pointer",
-  "&:hover": {
-    background: "linear-gradient(135deg, #FF6F61, #D83A34)",
-  },
-});
-
 type CongratulatoryMoneyProps = {
   data?: Data;
 };
@@ -86,18 +70,10 @@ export default function CongratulatoryMoney({
       </Divider>
       <Content>送上一份祝賀禮物 以表達您的祝賀之意</Content>
       <ContactButton onClick={() => setGroomVisible(true)}>
-        <RedEnvelopeButton>
-          <img
-            src="./assets/red_envelope_1.png"
-            alt="Red Envelope Button"
-            style={{
-              width: 64,
-              height: 64,
-              marginBottom: 16,
-            }}
-          />
-        </RedEnvelopeButton>
-
+        <CheckCircleTwoTone
+          style={{ fontSize: 64, marginBottom: 16 }}
+          twoToneColor="#829fe0"
+        />
         <br />
         <SubContent>禮金帳戶</SubContent>
       </ContactButton>
