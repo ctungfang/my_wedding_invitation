@@ -84,7 +84,7 @@ export default function CongratulatoryMoney({
       <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
         <Title>送上祝賀</Title>
       </Divider>
-      <Content>送上一份祝賀禮物 以表達您的祝賀之意</Content>
+      <Content>送上一份祝賀禮物 以表達您美好的祝福</Content>
       <ContactButton onClick={() => setGroomVisible(true)}>
       <RedEnvelopeButton>
           <img
@@ -120,7 +120,7 @@ export default function CongratulatoryMoney({
               <Button
                 type="text"
                 style={{ padding: 0, margin: 0 }}
-                onClick={() => message.success("The account number has been copied")}
+                onClick={() => message.success("帳號已複製")}
               >
                 {data?.groom?.account_number}
               </Button>

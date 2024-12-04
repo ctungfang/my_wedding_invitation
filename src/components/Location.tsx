@@ -71,7 +71,7 @@ const GoogleMapButton = styled("a", {
 export default function Location({
   data,
 }: {
-  data?: { location_title: string; location: string; wedding_address: string };
+  data?: { location_title: string; location: string; wedding_address: string; parking_title: string; parking_info: string; parking_info2: string; parking_free: string };
 }) {
   return (
     <Wrapper>
@@ -101,6 +101,15 @@ export default function Location({
           >
             Google Map
           </GoogleMapButton>
+
+          <LocationTitle>{data?.parking_title}</LocationTitle>
+          <Address>
+            {data?.parking_free}
+            <br />
+            {data?.parking_info}
+            <br />
+            {data?.parking_info2}
+          </Address>
         </AddressWrapper>
       </ContentWrapper>
     </Wrapper>
