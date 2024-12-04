@@ -5,7 +5,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 const Wrapper = styled("div", {
   background: "#efebe9",
-  backgroundImage: "url(./assets/GroovePaper.jpg)",
+  backgroundImage: "url(./assets/GroovePaper.png)",
   width: "100%",
 });
 
