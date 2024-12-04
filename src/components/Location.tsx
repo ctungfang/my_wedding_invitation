@@ -21,9 +21,15 @@ const ContentWrapper = styled("div", {
   justifyContent: "center", // Align items horizontally to the center of the wrapper
   alignItems: "center", // Vertically align the map and address section
   gap: "16px", // Space between the map and address section
-  flexWrap: "wrap", // For responsive behavior
+  flexWrap: "nowrap", // For responsive behavior
   marginTop: "24px",
-});
+
+  // Media query for small screens 
+  "@media (max-width: 768px)": { flexDirection: "row", // Always keep items in a row justify
+    Content: "center", // Center them horizontally 
+    alignItems: "flex-start", // Align them to the start of the container
+    },
+  });
 
 const Image = styled("img", {
   width: "50%",
