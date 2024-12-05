@@ -7,6 +7,7 @@ import JsonData from "@/data.json";
 const Title = dynamic(() => import("@/components/Title"), { ssr: false });
 const Gretting = dynamic(() => import("@/components/Gretting"), { ssr: false });
 const Wedding = dynamic(() => import("@/components/Wedding"), { ssr: false });
+const EInvitation = dynamic(() => import("@/components/EInvitation"), { ssr: false });
 const Gallery = dynamic(() => import("@/components/Gallery"), { ssr: false });
 const Location = dynamic(() => import("@/components/Location"), { ssr: false });
 const CongratulatoryMoney = dynamic(() => import("@/components/CongratulatoryMoney"), { ssr: false });
@@ -62,6 +63,7 @@ export default function Home() {
         <Title data={JsonData} />
         <Gretting data={JsonData} />
         <Wedding data={JsonData} />
+        <EInvitation data={JsonData} />
         <Gallery />
         <Location data={JsonData} />
         <CongratulatoryMoney data={JsonData} />
