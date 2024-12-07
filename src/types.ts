@@ -6,6 +6,7 @@ type Data = {
   location: string;
   wedding_address?: string;
   gretting: string;
+  verse: string;
   invitation_title?: string;
   ceremoney_info?: string;
   banquet_entry_info?: string;

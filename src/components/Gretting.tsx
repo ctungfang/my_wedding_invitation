@@ -42,6 +42,7 @@ export default function Gretting({ data }: GrettingProps) {
             <br />
           </div>
         ))}
+        {data?.verse}
       </Content>
     </Wrapper>
   );
